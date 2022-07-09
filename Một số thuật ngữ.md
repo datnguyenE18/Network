@@ -96,3 +96,32 @@ Trong đó:
 ***
 **HTTP vs HTTPS**
 * HTTPS là viết tắt của từ HyperText Transfer Protocol Secure và chính là giao thức HTTP có sử dụng thêm các chứng chỉ SSL (secure Sockets Layer) giúp mã hóa dữ liệu truyền tải nhằm gia bảo mật giữa Web sever đến các trình duyệt web. Nói cách khác HTTPS là phiên bản HTTP nhưng an toàn hơn, bảo mật hơn.
+
+***
+**Runtime API:** Có trong (embedded) bộ cân bằng tải (load balancer) mà không cần cài thêm packages nào khác. Nó cho phép sửa một số cấu hình của load balancer mà không cần khởi động lại dịch vụ. Những thay đổi được lưu trong memory cho đến khi tải/khởi động lại dịch vụ mà không làm thay đổi file cấu hình trên đĩa. Sử dụng tính năng này để thực hiện những thay đổi nhanh như bật/tắt server hoặc thêm đường dẫn (entries) để map file vào memory
+
+  **Org:** The Runtime API is embedded inside the load balancer and requires no other packages. It lets you configure some aspects of the load balancer at runtime without needing to reload the service. Changes are kept in memory only until the next reload or restart and are not saved to the configuration file on disk. Use this feature to make on-the-fly changes, such as enabling and disabling servers or adding entries to map files in memory.
+
+--------------
+**seamless reload:** Thường được gọi là “seamless” hay “hitless” reload, là một cấu hình (configuration) mà khi cấu hình hoặc nâng cấp dịch vụ không làm ảnh hưởng đến trải nghiệm người dùng
+
+--------
+**Máy chủ upstream ( upstream server ):** là một máy chủ cung cấp các dịch vụ cho các máy chủ khác và nằm cao hơn/bên trên so với hệ thống các máy chủ.
+
+-----
+**SSL/TLS:** TLS trước đây là SSL là giao thức mật mã được thiết kế để cung cấp truyền thông an toàn qua một mạng máy tính
+
+------
+**SSL Certificate (Chứng chỉ SSL):** 
+  - Là một tập tin nhỏ được mã hóa chứa dữ liệu thông tin của một website hoặc một tổ chức/công ty. 
+ 
+  - Khi cài đặt chứng chỉ lên máy chủ website (webserver), nó sẽ cho phép website sử dụng kết nối an toàn (hay còn gọi là Giao thức HTTPS) khi giao tiếp giữa webserver và trình duyệt của người dùng. Khi dữ liệu truyền đi thông qua giao thức HTTPS, các dữ liệu sẽ được mã hóa và chỉ có webserver chứa khóa riêng (private key) thì mới có thể giải mã được dữ liệu này.
+ 
+  - Để có chứng chỉ SSL, khách hàng sẽ cần phải thực hiện chứng thực để chứng minh là người sở hữu tên miền hợp lệ. Với các chức chỉ dành cho doanh nghiệp thì việc chứng thực sẽ phức tạp hơn vì tổ chức chứng thực sẽ cần biết chắc chắn doanh nghiệp của bạn đang tồn tại và hoạt động. Chính vì lẽ đó mà các website có chứng chỉ SSL sẽ có độ uy tín tốt hơn tùy thuộc vào loại chứng chỉ đang sử dụng
+ 
+  - Khi sử dụng giao thức HTTPS, trình duyệt sẽ hiển thị địa chỉ website với dạng https:// và có hình ổ khóa
+ 
+  - **Site Seal:** Khi sử dụng chứng chỉ SSL trả phí, thì mỗi chứng chỉ sẽ được cấp một logo chứng nhận là đang sử dụng chứng chỉ SSL của tổ chức đó, hay còn được gọi là Site Seal hoặc Trust Seal. Gồm có 2 loại:
+    - **Dynamic:** Là site seal dạng động, có thể hỗ trợ hiệu ứng hiển thị thông tin về website hoặc doanh nghiệp khi rê chuột vào. Điều này sẽ giúp người dùng tin tưởng vào website mà họ đang truy cập nhiều hơn
+ 
+    - **Static:** Với một số chứng chỉ SSL giá rẻ thì chỉ hỗ trợ site seal dạng tĩnh, nó chỉ là một tấm ảnh và có thể đặt vào bất cứ đâu trong website nhưng sẽ không có hiệu ứng rê chuột vào hoặc không thể nhấp để xem thông tin được
