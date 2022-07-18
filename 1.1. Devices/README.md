@@ -59,13 +59,14 @@ Router là một thiết bị mạng (gọi là bộ định tuyến) có khả 
 
 Router sẽ có 2 loại phổ biến là có dây và không dây. Router có dây thường được sử dụng trong một mạng nội bộ LAN. Trong khi đó router không dây thường được gọi là Router Wifi, là thiết bị phát wifi cho mạng internet.
 
+***
 **Gateway – Kết nối mạng giao thức khác nhau**
 
 Đối với các mạng có giao thức khác nhau, bạn không thể sử dụng Bridge để kết nối. Lúc này, bạn cần một thiết bị mạng với tên gọi là Gateway. Chúng sẽ giúp bạn kết nối các mạng không cùng giao thức lại với nhau.
 
 Như vậy, cả 6 thiết bị mạng kể trên đều quan trọng và cần thiết nếu bạn cần lắp đặt một mạng máy tính nội bộ hay cần thiết thêm thông tin về mạng máy tính.
-
-Modem – Giao tiếp mạng ISP
+***
+**Modem – Giao tiếp mạng ISP**
 
 Nếu bạn cần kết nối mạng internet, chắc chắn bạn cần phải có modem để kết nối. Modem có chức năng chuyển hóa gói dữ liệu từ nhà cung cấp đến người dùng. Modem kết nối với hệ thống cáp quang (cho tốc độ cao) và cáp đồng trục.
 
