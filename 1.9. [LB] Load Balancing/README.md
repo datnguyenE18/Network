@@ -143,3 +143,19 @@ Thuật toán này hoạt động tốt khi mà hiệu suất và khả năng t�
 
 ---
 - **Least response time:**  Đây là thuật toán dựa trên tính toán thời gian đáp ứng của mỗi server (response time), thuật toán này sẽ chọn server nào có thời gian đáp ứng nhanh nhất. Thời gian đáp ứng được xác định bởi khoảng thời gian giữa thời điểm gửi một gói tin đến server và thời điểm nhận được gói tin trả lời.
+
+***
+- **Các loại thuật toán cân bằng tải (lv\_algo Values for Virtual Server):**
+
+|**Algorithm Name**|**lv\_algo value**|
+| :-: | :-: |
+|Round-Robin|rr|
+|Weighted Round-Robin|wrr|
+|Least-Connection|lc|
+|Weighted Least-Connection|wlc|
+|Locality-Based Least-Connection|lblc|
+|Locality-Based Least-Connection Scheduling with Replication|lblcr|
+|Destination Hash|dh|
+|Source Hash|sh|
+|Source Expected Delay|sed|
+|Never Queue|nq|
