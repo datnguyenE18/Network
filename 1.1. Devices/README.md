@@ -59,7 +59,7 @@ Router là một thiết bị mạng (gọi là bộ định tuyến) có khả 
 
 Router sẽ có 2 loại phổ biến là có dây và không dây. Router có dây thường được sử dụng trong một mạng nội bộ LAN. Trong khi đó router không dây thường được gọi là Router Wifi, là thiết bị phát wifi cho mạng internet.
 
-Gateway – Kết nối mạng giao thức khác nhau
+**Gateway – Kết nối mạng giao thức khác nhau**
 
 Đối với các mạng có giao thức khác nhau, bạn không thể sử dụng Bridge để kết nối. Lúc này, bạn cần một thiết bị mạng với tên gọi là Gateway. Chúng sẽ giúp bạn kết nối các mạng không cùng giao thức lại với nhau.
 
