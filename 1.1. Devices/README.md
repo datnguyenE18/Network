@@ -64,7 +64,10 @@ Router sẽ có 2 loại phổ biến là có dây và không dây. Router có d
 
 Đối với các mạng có giao thức khác nhau, bạn không thể sử dụng Bridge để kết nối. Lúc này, bạn cần một thiết bị mạng với tên gọi là Gateway. Chúng sẽ giúp bạn kết nối các mạng không cùng giao thức lại với nhau.
 
-Như vậy, cả 6 thiết bị mạng kể trên đều quan trọng và cần thiết nếu bạn cần lắp đặt một mạng máy tính nội bộ hay cần thiết thêm thông tin về mạng máy tính.
+Gateway là một nút mạng được sử dụng trong viễn thông nhằm kết nối hai mạng có giao thức truyền thông khác nhau có thể giao tiếp được với nhau.
+
+Gateway có vai trò xử lý đầu vào và ra của mạng vì tất cả dữ liệu phải đi qua hoặc giao tiếp với gateway trước khi được định tuyến. Trong hầu hết các mạng IP, lưu lượng duy nhất không đi qua gateway là lưu lượng truyền giữa các nút trên cùng một phân đoạn mạng cục bộ (LAN)
+
 ***
 **Modem – Giao tiếp mạng ISP**
 
